@@ -1,0 +1,484 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:22:08 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Sun Jul 14 11:19:44 2019
+# Process ID: 13104
+# Log file: H:/FPGA/Benchmark/project_benchmark/project_benchmark.runs/synth_1/s9234.vds
+# Journal file: H:/FPGA/Benchmark/project_benchmark/project_benchmark.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source s9234.tcl -notrace
+Command: synth_design -top s9234 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2019.01' and will expire in -164 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module dff [H:/FPGA/Benchmark/project_benchmark/project_benchmark.srcs/sources_1/imports/new/s9234_final.v:31]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 301.410 ; gain = 123.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 's9234' [H:/FPGA/Benchmark/project_benchmark/project_benchmark.srcs/sources_1/new/s9234.v:37]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "yes" *) [H:/FPGA/Benchmark/project_benchmark/project_benchmark.srcs/sources_1/new/s9234.v:53]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "yes" *) [H:/FPGA/Benchmark/project_benchmark/project_benchmark.srcs/sources_1/new/s9234.v:64]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "yes" *) [H:/FPGA/Benchmark/project_benchmark/project_benchmark.srcs/sources_1/new/s9234.v:543]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "yes" *) [H:/FPGA/Benchmark/project_benchmark/project_benchmark.srcs/sources_1/new/s9234.v:545]
+INFO: [Synth 8-638] synthesizing module 'lfsr' [H:/FPGA/Benchmark/project_benchmark/project_benchmark.srcs/sources_1/new/lfsr.v:20]
+	Parameter ms_limit bound to: 1000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'lfsr' (1#1) [H:/FPGA/Benchmark/project_benchmark/project_benchmark.srcs/sources_1/new/lfsr.v:20]
+INFO: [Synth 8-638] synthesizing module 'dff' [H:/FPGA/Benchmark/project_benchmark/project_benchmark.srcs/sources_1/imports/new/s9234_final.v:31]
+INFO: [Synth 8-256] done synthesizing module 'dff' (2#1) [H:/FPGA/Benchmark/project_benchmark/project_benchmark.srcs/sources_1/imports/new/s9234_final.v:31]
+INFO: [Synth 8-256] done synthesizing module 's9234' (3#1) [H:/FPGA/Benchmark/project_benchmark/project_benchmark.srcs/sources_1/new/s9234.v:37]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 476.980 ; gain = 298.852
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 476.980 ; gain = 298.852
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [H:/FPGA/Benchmark/project_benchmark/project_benchmark.srcs/constrs_1/new/S_9324(new).xdc]
+Finished Parsing XDC File [H:/FPGA/Benchmark/project_benchmark/project_benchmark.srcs/constrs_1/new/S_9324(new).xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.172 . Memory (MB): peak = 653.285 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 653.285 ; gain = 475.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 653.285 ; gain = 475.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 653.285 ; gain = 475.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:43 . Memory (MB): peak = 653.285 ; gain = 475.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     16 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 211   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module lfsr 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     16 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+Module dff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 653.285 ; gain = 475.156
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 653.285 ; gain = 475.156
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 653.285 ; gain = 475.156
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:45 . Memory (MB): peak = 653.285 ; gain = 475.156
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:58 ; elapsed = 00:01:45 . Memory (MB): peak = 653.285 ; gain = 475.156
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:58 ; elapsed = 00:01:45 . Memory (MB): peak = 653.285 ; gain = 475.156
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:56 . Memory (MB): peak = 653.285 ; gain = 475.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:56 . Memory (MB): peak = 653.285 ; gain = 475.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:02:28 . Memory (MB): peak = 653.285 ; gain = 475.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:24 ; elapsed = 00:02:30 . Memory (MB): peak = 653.285 ; gain = 475.156
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:24 ; elapsed = 00:02:30 . Memory (MB): peak = 653.285 ; gain = 475.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:24 ; elapsed = 00:02:31 . Memory (MB): peak = 653.285 ; gain = 475.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:01:24 ; elapsed = 00:02:31 . Memory (MB): peak = 653.285 ; gain = 475.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:25 ; elapsed = 00:02:31 . Memory (MB): peak = 653.285 ; gain = 475.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |  3634|
+|3     |LUT2 |  1801|
+|4     |LUT3 |    92|
+|5     |LUT4 |   107|
+|6     |FDRE |   224|
+|7     |FDSE |     3|
+|8     |IBUF |     2|
+|9     |OBUF |    39|
++------+-----+------+
+
+Report Instance Areas: 
++------+----------+--------+------+
+|      |Instance  |Module  |Cells |
++------+----------+--------+------+
+|1     |top       |        |  5903|
+|2     |  DFF_0   |dff     |     1|
+|3     |  DFF_1   |dff_0   |     1|
+|4     |  DFF_10  |dff_1   |     1|
+|5     |  DFF_100 |dff_2   |     1|
+|6     |  DFF_101 |dff_3   |     1|
+|7     |  DFF_102 |dff_4   |     1|
+|8     |  DFF_103 |dff_5   |     1|
+|9     |  DFF_104 |dff_6   |     1|
+|10    |  DFF_105 |dff_7   |     1|
+|11    |  DFF_106 |dff_8   |     1|
+|12    |  DFF_107 |dff_9   |     1|
+|13    |  DFF_108 |dff_10  |     1|
+|14    |  DFF_109 |dff_11  |     1|
+|15    |  DFF_11  |dff_12  |     1|
+|16    |  DFF_110 |dff_13  |     1|
+|17    |  DFF_111 |dff_14  |     1|
+|18    |  DFF_112 |dff_15  |     1|
+|19    |  DFF_113 |dff_16  |     1|
+|20    |  DFF_114 |dff_17  |     1|
+|21    |  DFF_115 |dff_18  |     1|
+|22    |  DFF_116 |dff_19  |     1|
+|23    |  DFF_117 |dff_20  |     1|
+|24    |  DFF_118 |dff_21  |     1|
+|25    |  DFF_119 |dff_22  |     1|
+|26    |  DFF_12  |dff_23  |     1|
+|27    |  DFF_120 |dff_24  |     1|
+|28    |  DFF_121 |dff_25  |     1|
+|29    |  DFF_122 |dff_26  |     1|
+|30    |  DFF_123 |dff_27  |     1|
+|31    |  DFF_124 |dff_28  |     1|
+|32    |  DFF_125 |dff_29  |     1|
+|33    |  DFF_126 |dff_30  |     1|
+|34    |  DFF_127 |dff_31  |     1|
+|35    |  DFF_128 |dff_32  |     1|
+|36    |  DFF_129 |dff_33  |     1|
+|37    |  DFF_13  |dff_34  |     1|
+|38    |  DFF_130 |dff_35  |     1|
+|39    |  DFF_131 |dff_36  |     1|
+|40    |  DFF_132 |dff_37  |     1|
+|41    |  DFF_133 |dff_38  |     1|
+|42    |  DFF_134 |dff_39  |     1|
+|43    |  DFF_135 |dff_40  |     1|
+|44    |  DFF_136 |dff_41  |     1|
+|45    |  DFF_137 |dff_42  |     1|
+|46    |  DFF_138 |dff_43  |     1|
+|47    |  DFF_139 |dff_44  |     1|
+|48    |  DFF_14  |dff_45  |     1|
+|49    |  DFF_140 |dff_46  |     1|
+|50    |  DFF_141 |dff_47  |     1|
+|51    |  DFF_142 |dff_48  |     1|
+|52    |  DFF_143 |dff_49  |     1|
+|53    |  DFF_144 |dff_50  |     1|
+|54    |  DFF_145 |dff_51  |     1|
+|55    |  DFF_146 |dff_52  |     1|
+|56    |  DFF_147 |dff_53  |     1|
+|57    |  DFF_148 |dff_54  |     1|
+|58    |  DFF_149 |dff_55  |     1|
+|59    |  DFF_15  |dff_56  |     1|
+|60    |  DFF_150 |dff_57  |     1|
+|61    |  DFF_151 |dff_58  |     1|
+|62    |  DFF_152 |dff_59  |     1|
+|63    |  DFF_153 |dff_60  |     1|
+|64    |  DFF_154 |dff_61  |     1|
+|65    |  DFF_155 |dff_62  |     1|
+|66    |  DFF_156 |dff_63  |     1|
+|67    |  DFF_157 |dff_64  |     1|
+|68    |  DFF_158 |dff_65  |     1|
+|69    |  DFF_159 |dff_66  |     1|
+|70    |  DFF_16  |dff_67  |     1|
+|71    |  DFF_160 |dff_68  |     1|
+|72    |  DFF_161 |dff_69  |     1|
+|73    |  DFF_162 |dff_70  |     1|
+|74    |  DFF_163 |dff_71  |     1|
+|75    |  DFF_164 |dff_72  |     1|
+|76    |  DFF_165 |dff_73  |     1|
+|77    |  DFF_166 |dff_74  |     1|
+|78    |  DFF_167 |dff_75  |     1|
+|79    |  DFF_168 |dff_76  |     1|
+|80    |  DFF_169 |dff_77  |     1|
+|81    |  DFF_17  |dff_78  |     1|
+|82    |  DFF_170 |dff_79  |     1|
+|83    |  DFF_171 |dff_80  |     1|
+|84    |  DFF_172 |dff_81  |     1|
+|85    |  DFF_173 |dff_82  |     1|
+|86    |  DFF_174 |dff_83  |     1|
+|87    |  DFF_175 |dff_84  |     1|
+|88    |  DFF_176 |dff_85  |     1|
+|89    |  DFF_177 |dff_86  |     1|
+|90    |  DFF_178 |dff_87  |     1|
+|91    |  DFF_179 |dff_88  |     1|
+|92    |  DFF_18  |dff_89  |     1|
+|93    |  DFF_180 |dff_90  |     1|
+|94    |  DFF_181 |dff_91  |     1|
+|95    |  DFF_182 |dff_92  |     1|
+|96    |  DFF_183 |dff_93  |     1|
+|97    |  DFF_184 |dff_94  |     1|
+|98    |  DFF_185 |dff_95  |     1|
+|99    |  DFF_186 |dff_96  |     1|
+|100   |  DFF_187 |dff_97  |     1|
+|101   |  DFF_188 |dff_98  |     1|
+|102   |  DFF_189 |dff_99  |     1|
+|103   |  DFF_19  |dff_100 |     1|
+|104   |  DFF_190 |dff_101 |     1|
+|105   |  DFF_191 |dff_102 |     1|
+|106   |  DFF_192 |dff_103 |     1|
+|107   |  DFF_193 |dff_104 |     1|
+|108   |  DFF_194 |dff_105 |     1|
+|109   |  DFF_195 |dff_106 |     1|
+|110   |  DFF_196 |dff_107 |     1|
+|111   |  DFF_197 |dff_108 |     1|
+|112   |  DFF_198 |dff_109 |     1|
+|113   |  DFF_199 |dff_110 |     1|
+|114   |  DFF_2   |dff_111 |     1|
+|115   |  DFF_20  |dff_112 |     1|
+|116   |  DFF_200 |dff_113 |     1|
+|117   |  DFF_201 |dff_114 |     1|
+|118   |  DFF_202 |dff_115 |     1|
+|119   |  DFF_203 |dff_116 |     1|
+|120   |  DFF_204 |dff_117 |     1|
+|121   |  DFF_205 |dff_118 |     1|
+|122   |  DFF_206 |dff_119 |     1|
+|123   |  DFF_207 |dff_120 |     1|
+|124   |  DFF_208 |dff_121 |     1|
+|125   |  DFF_209 |dff_122 |     1|
+|126   |  DFF_21  |dff_123 |     1|
+|127   |  DFF_210 |dff_124 |     1|
+|128   |  DFF_22  |dff_125 |     1|
+|129   |  DFF_23  |dff_126 |     1|
+|130   |  DFF_24  |dff_127 |     1|
+|131   |  DFF_25  |dff_128 |     1|
+|132   |  DFF_26  |dff_129 |     1|
+|133   |  DFF_27  |dff_130 |     1|
+|134   |  DFF_28  |dff_131 |     1|
+|135   |  DFF_29  |dff_132 |     1|
+|136   |  DFF_3   |dff_133 |     1|
+|137   |  DFF_30  |dff_134 |     1|
+|138   |  DFF_31  |dff_135 |     1|
+|139   |  DFF_32  |dff_136 |     1|
+|140   |  DFF_33  |dff_137 |     1|
+|141   |  DFF_34  |dff_138 |     1|
+|142   |  DFF_35  |dff_139 |     1|
+|143   |  DFF_36  |dff_140 |     1|
+|144   |  DFF_37  |dff_141 |     1|
+|145   |  DFF_38  |dff_142 |     1|
+|146   |  DFF_39  |dff_143 |     1|
+|147   |  DFF_4   |dff_144 |     1|
+|148   |  DFF_40  |dff_145 |     1|
+|149   |  DFF_41  |dff_146 |     1|
+|150   |  DFF_42  |dff_147 |     1|
+|151   |  DFF_43  |dff_148 |     1|
+|152   |  DFF_44  |dff_149 |     1|
+|153   |  DFF_45  |dff_150 |     1|
+|154   |  DFF_46  |dff_151 |     1|
+|155   |  DFF_47  |dff_152 |     1|
+|156   |  DFF_48  |dff_153 |     1|
+|157   |  DFF_49  |dff_154 |     1|
+|158   |  DFF_5   |dff_155 |     1|
+|159   |  DFF_50  |dff_156 |     1|
+|160   |  DFF_51  |dff_157 |     1|
+|161   |  DFF_52  |dff_158 |     1|
+|162   |  DFF_53  |dff_159 |     1|
+|163   |  DFF_54  |dff_160 |     1|
+|164   |  DFF_55  |dff_161 |     1|
+|165   |  DFF_56  |dff_162 |     1|
+|166   |  DFF_57  |dff_163 |     1|
+|167   |  DFF_58  |dff_164 |     1|
+|168   |  DFF_59  |dff_165 |     1|
+|169   |  DFF_6   |dff_166 |     1|
+|170   |  DFF_60  |dff_167 |     1|
+|171   |  DFF_61  |dff_168 |     1|
+|172   |  DFF_62  |dff_169 |     1|
+|173   |  DFF_63  |dff_170 |     1|
+|174   |  DFF_64  |dff_171 |     1|
+|175   |  DFF_65  |dff_172 |     1|
+|176   |  DFF_66  |dff_173 |     1|
+|177   |  DFF_67  |dff_174 |     1|
+|178   |  DFF_68  |dff_175 |     1|
+|179   |  DFF_69  |dff_176 |     1|
+|180   |  DFF_7   |dff_177 |     1|
+|181   |  DFF_70  |dff_178 |     1|
+|182   |  DFF_71  |dff_179 |     1|
+|183   |  DFF_72  |dff_180 |     1|
+|184   |  DFF_73  |dff_181 |     1|
+|185   |  DFF_74  |dff_182 |     1|
+|186   |  DFF_75  |dff_183 |     1|
+|187   |  DFF_76  |dff_184 |     1|
+|188   |  DFF_77  |dff_185 |     1|
+|189   |  DFF_78  |dff_186 |     1|
+|190   |  DFF_79  |dff_187 |     1|
+|191   |  DFF_8   |dff_188 |     1|
+|192   |  DFF_80  |dff_189 |     1|
+|193   |  DFF_81  |dff_190 |     1|
+|194   |  DFF_82  |dff_191 |     1|
+|195   |  DFF_83  |dff_192 |     1|
+|196   |  DFF_84  |dff_193 |     1|
+|197   |  DFF_85  |dff_194 |     1|
+|198   |  DFF_86  |dff_195 |     1|
+|199   |  DFF_87  |dff_196 |     1|
+|200   |  DFF_88  |dff_197 |     1|
+|201   |  DFF_89  |dff_198 |     1|
+|202   |  DFF_9   |dff_199 |     1|
+|203   |  DFF_90  |dff_200 |     1|
+|204   |  DFF_91  |dff_201 |     1|
+|205   |  DFF_92  |dff_202 |     1|
+|206   |  DFF_93  |dff_203 |     1|
+|207   |  DFF_94  |dff_204 |     1|
+|208   |  DFF_95  |dff_205 |     1|
+|209   |  DFF_96  |dff_206 |     1|
+|210   |  DFF_97  |dff_207 |     1|
+|211   |  DFF_98  |dff_208 |     1|
+|212   |  DFF_99  |dff_209 |     1|
+|213   |  lfsr    |lfsr    |    17|
++------+----------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:25 ; elapsed = 00:02:32 . Memory (MB): peak = 653.285 ; gain = 475.156
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:02:14 . Memory (MB): peak = 653.285 ; gain = 286.906
+Synthesis Optimization Complete : Time (s): cpu = 00:01:26 ; elapsed = 00:02:32 . Memory (MB): peak = 653.285 ; gain = 475.156
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 's9234' is not ideal for floorplanning, since the cellview 's9234' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:02:31 . Memory (MB): peak = 653.285 ; gain = 463.211
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.124 . Memory (MB): peak = 653.285 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 14 11:22:19 2019...

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:22:08 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Fri Sep 21 16:04:37 2018
+# Process ID: 21044
+# Log file: H:/FPGA/Benchmark/project_benchmark/project_benchmark.runs/impl_1/s9234.vdi
+# Journal file: H:/FPGA/Benchmark/project_benchmark/project_benchmark.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source s9234.tcl -notrace

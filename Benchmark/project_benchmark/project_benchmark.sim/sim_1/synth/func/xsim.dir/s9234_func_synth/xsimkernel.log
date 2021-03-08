@@ -1,0 +1,4 @@
+Running: xsim.dir/s9234_func_synth/xsimk.exe -simmode gui -wdb s9234_func_synth.wdb -simrunnum 0 -socket 50924
+Design successfully loaded
+Design Loading Memory Usage: 25708 KB (Peak: 25708 KB)
+Design Loading CPU Usage: 312 ms

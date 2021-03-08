@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:22:08 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Mon Jun 11 16:42:02 2018
+# Process ID: 10100
+# Log file: H:/Benchmark/project_benchmark/project_benchmark.sim/sim_1/synth/func/webtalk.log
+# Journal file: H:/Benchmark/project_benchmark/project_benchmark.sim/sim_1/synth/func\webtalk.jou
+#-----------------------------------------------------------
+source H:/Benchmark/project_benchmark/project_benchmark.sim/sim_1/synth/func/xsim.dir/lfsr_func_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'H:/Benchmark/project_benchmark/project_benchmark.sim/sim_1/synth/func/xsim.dir/lfsr_func_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Jun 11 16:42:04 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun 11 16:42:04 2018...
