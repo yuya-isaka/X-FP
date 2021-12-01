@@ -1,6 +1,9 @@
-`timescale 1ns / 1ps
 
-module counter(clk, rst, c1000);
+module counter (
+    clk,
+    rst,
+    c1000
+);
 
 input clk, rst;
 output c1000;

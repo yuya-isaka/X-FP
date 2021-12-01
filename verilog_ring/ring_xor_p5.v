@@ -1,5 +1,9 @@
 
-module ring_xor_new(start, clk_s);
+module ring_xor_new (
+	start,
+	clk_s
+);
+
 (* keep = "true" *) input start;
 (* dont_touch = "yes" *)
 output clk_s;
